@@ -1,0 +1,301 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <title>Saudi Weather | worldweather </title>
+<style>
+    *{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+body{
+    line-height: 1.6em;
+    font-family: Arial,sans-serif;
+    color: #444;
+    padding-top: 20px
+}
+
+a{
+    color: #777;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+.wrapper{
+    width: 600px;
+    margin: 0 auto;
+}
+
+nav{
+    text-align: center
+}
+nav a{
+  padding: 0 5px;
+  font-size: 90%;
+}
+header{
+    font-family: 'Libre Baskerville', Georgia;
+    margin: 10px 0;
+    padding: 20px;
+    border-bottom: 1px solid #F4F6F7;
+    text-align: center;
+}
+header h1{
+    line-height: 1.2em;
+}
+
+.home{
+  margin-top: 70px
+}
+time{
+  padding-left: 20px;
+}
+
+article{
+    padding: 15px;
+    font-size: 90%;
+}
+article p{
+    padding: 10px
+}
+article a{
+    color: #407FBF;
+}
+article h3{
+    color: #FF9999;
+}
+article a:visited{
+    color: #74A2D0;
+}
+article img{
+    max-width: 550px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+article.list{
+    padding: 0
+}
+aside{
+    margin-top: 20px;
+    border-top: 1px solid #F4F6F7;
+}
+blockquote{
+    font-style: italic;
+    padding: 5px 15px;
+    margin: 10px;
+    border-left: 5px solid #F4F6F7
+}
+
+article > ul, article > ol, .post-list ul, .post-list ol{
+    margin-left:35px;
+}
+.post-list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.post-list time{
+    display: block;
+    padding: 0 10px 0 0
+}
+.post-list > li{
+    border-bottom: 1px solid #F4F6F7;
+    padding: 20px 10px;
+}
+.post-list > li:last-child{
+    border: 0;
+}
+.post-list h3{
+    margin-bottom: 10px
+}
+
+.highlight pre{
+    padding: 10px;
+    overflow: auto;
+}
+
+.paginator{
+    border-top: 1px solid #F4F6F7;
+    padding: 15px;
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center
+}
+.newer{
+    display: inline-block;
+    margin-right: 50px
+}
+
+.center{
+  text-align: center
+}
+.fade{
+  color: #aca899;
+}
+
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: " ";
+}
+.clearfix:after {
+  clear: both;
+}
+
+
+footer{
+    font-size: 90%;
+    text-align: center;
+    margin:20px 0;
+    padding-left: 15px
+}
+footer a{
+  padding: 5px
+}
+
+
+/*
+Responsive
+*/
+@media (max-width : 600px) {
+	.wrapper{
+		width:100%
+	}
+}
+    pre code[class]:after {
+  content: 'highlight: ' attr(class);
+  display: block; text-align: right;
+  font-size: smaller;
+  color: #CCC; background: white;
+  border-top: solid 1px;
+  padding-top: 0.5em;
+}
+
+pre code {
+  display: block;
+  background: #F0F0F0;
+}
+
+pre code,
+.ruby .subst,
+.xml .title,
+.lisp .title {
+  color: black;
+}
+
+.string,
+.title,
+.parent,
+.tag .attribute .value,
+.rules .value,
+.rules .value .number,
+.preprocessor,
+.ruby .symbol,
+.instancevar,
+.aggregate,
+.template_tag,
+.django .variable,
+.smalltalk .class,
+.addition,
+.flow,
+.stream,
+.bash .variable,
+.apache .tag,
+.apache .cbracket {
+  color: #800;
+}
+
+.comment,
+.annotation,
+.template_comment,
+.diff .header,
+.chunk {
+  color: #888;
+}
+
+.number,
+.date,
+.regexp,
+.literal,
+.smalltalk .symbol,
+.smalltalk .char,
+.change {
+  color: #080;
+}
+
+.label,
+.javadoc,
+.ruby .string,
+.decorator,
+.filter .argument,
+.localvars,
+.array,
+.attr_selector,
+.pseudo,
+.pi,
+.doctype,
+.deletion,
+.envvar,
+.shebang,
+.apache .sqbracket {
+  color: #88F;
+}
+
+.keyword,
+.id,
+.phpdoc,
+.title,
+.built_in,
+.aggregate,
+.smalltalk .class,
+.winutils,
+.bash .variable,
+.apache .tag {
+  font-weight: bold;
+}
+
+.html .css,
+.html .javascript,
+.html .vbscript {
+  opacity: 0.5;
+}
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+    <nav>
+        <a href="/">home</a> &middot; 
+    </nav>
+    <header>
+        <h1>Saudi Weather</h1>
+        <time>01 Dec 2015</time>
+    </header>
+    <article>
+        <p><a href="https://www.saudiweather.net/en/">Weather in Saudi</a><br />
+<a href="https://www.saudiweather.net/en/weather/sa/abha">Weather in Abha</a><br /><a href="https://www.saudiweather.net/en/weather/sa/OEBA">Weather in Al Bahah</a><br /><a href="https://www.saudiweather.net/en/weather/sa/OESK">Weather in Al Jawf</a><br /><a href="https://www.saudiweather.net/en/weather/sa/OEAH">Weather in Al-Ahsa</a><br /><a href="https://www.saudiweather.net/en/weather/sa/Al-Khafji">Weather in Al-Khafji</a><br /><a href="https://www.saudiweather.net/en/weather/sa/OEKJ">Weather in Al-Kharj</a><br /><a href="https://www.saudiweather.net/en/weather/sa/OEGS">Weather in Al-Qassim</a><br /><a href="https://www.saudiweather.net/en/weather/sa/Arar">Weather in Arar</a><br /><a href="https://www.saudiweather.net/en/weather/sa/OEDF">Weather in Dammam</a><br /><a href="https://www.saudiweather.net/en/weather/sa/Dawadmi">Weather in Dawadmi</a><br /><a href="https://www.saudiweather.net/en/weather/sa/OEHL">Weather in Ha’il</a><br /><a href="https://www.saudiweather.net/en/weather/sa/OEKK">Weather in Hafr Al-Batin</a><br /><a href="https://www.saudiweather.net/en/weather/sa/Jazan">Weather in Jazan</a><br /><a href="https://www.saudiweather.net/en/weather/sa/Jeddah">Weather in Jeddah</a><br /><a href="https://www.saudiweather.net/en/weather/sa/OEKM">Weather in Khamis Mushait</a><br /><a href="https://www.saudiweather.net/en/weather/sa/OERK">Weather in King Khalid Int Airport</a><br /><a href="https://www.saudiweather.net/en/weather/sa/21.4,40">Weather in Mecca</a><br /><a href="https://www.saudiweather.net/en/weather/sa/OEMA">Weather in Medina</a><br /><a href="https://www.saudiweather.net/en/weather/sa/Najran">Weather in Najran</a><br /><a href="https://www.saudiweather.net/en/weather/sa/OEGT">Weather in Qurayyat</a><br /><a href="https://www.saudiweather.net/en/weather/sa/Rafha">Weather in Rafha</a><br /><a href="https://www.saudiweather.net/en/weather/sa/Riyadh">Weather in Riyadh</a><br /><a href="https://www.saudiweather.net/en/weather/sa/Sakaka">Weather in Sakaka</a><br /><a href="https://www.saudiweather.net/en/weather/sa/OETB">Weather in Tabuk</a><br /><a href="https://www.saudiweather.net/en/weather/sa/Taif">Weather in Taif</a><br /><a href="https://www.saudiweather.net/en/weather/sa/Tayma">Weather in Tayma</a><br /><a href="https://www.saudiweather.net/en/weather/sa/Turaif">Weather in Turaif</a><br /><a href="https://www.saudiweather.net/en/weather/sa/OEWD">Weather in Wadi ad-Dawasir</a><br /><a href="https://www.saudiweather.net/en/weather/sa/OEYN">Weather in Yanbu</a> </p>
+
+                   
+    </article>
+    <a href="https://www.almrahonline.com/t/%d8%a7%d9%84%d8%a3%d8%a8%d8%b1%d8%a7%d8%ac" class="btn btn-outline-inverse btn-lg">ابراج</a> | 
+<a href="https://www.almrahonline.com/pregnancy-childbirth " class="btn btn-outline-inverse btn-lg">الحمل</a> |  
+<a href="https://www.almrahonline.com/womens-beauty-elegance/skin-care" class="btn btn-outline-inverse btn-lg">الشعر</a> | 
+<a href="https://www.almrahonline.com/women-medicine " class="btn btn-outline-inverse btn-lg">الصحة</a> | 
+<a href="https://www.almrahonline.com/womens-beauty-elegance" class="btn btn-outline-inverse btn-lg">مكياج</a> |
+<a href="https://www.almrahonline.com/276 " class="btn btn-outline-inverse btn-lg">يرج العقرب</a>  
+    <footer>
+        <a href="/">home</a> &middot; <br><a href="http://www.arabsnews32.org">اخبار العرب</a> | <a href="https://www.sdeg.org">صدق</a> | <a href="https://www.saudiweather.net">الطقس في السعودية</a> || <a href="https://www.thedreams.co">تفسير الاحلام</a> | <a href="https://www.saudiweather.net/weather/sa/Jeddah"> الطقس في جدة</a> | <a href="https://www.saudiweather.net/weather/sa/Riyadh"> الطقس في الرياض</a> 
+    </footer>
+  </div>
+</body>
+</html>
